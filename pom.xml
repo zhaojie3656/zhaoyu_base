@@ -45,5 +45,6 @@
   	<module>zhaoyu_base-freemarker</module>
   	<module>zhaoyu_base-redis</module>
   	<module>zhaoyu_base-support</module>
+  	<module>zhaoyu_base-autocode</module>
   </modules>
 </project>
