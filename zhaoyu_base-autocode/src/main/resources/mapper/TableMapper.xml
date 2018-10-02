@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <!-- base mybatis file for sql defined by self  -->
-<mapper namespace="com.meicai.springboot.autocode.dao.TableDao">
+<mapper namespace="com.zhaoyu.base.autocode.dao.TableDao">
 
-    <select id="getByTableSchema" resultType="com.meicai.springboot.autocode.entity.TableEntity">
+    <select id="getByTableSchema" resultType="com.zhaoyu.base.autocode.entity.TableEntity">
 	   SELECT
 			TABLE_SCHEMA tableSchema,
 			TABLE_NAME tableName,
@@ -17,7 +17,7 @@
 			TABLE_SCHEMA = #{table_schema};
    </select>
    
-   <select id="getByTableSchemaAndTableNames" resultType="com.meicai.springboot.autocode.entity.TableEntity">
+   <select id="getByTableSchemaAndTableNames" resultType="com.zhaoyu.base.autocode.entity.TableEntity">
 	   SELECT
 			TABLE_SCHEMA tableSchema,
 			TABLE_NAME tableName,
@@ -35,7 +35,7 @@
 	    </foreach>
    </select>
    
-   <select id="getAllTableSchema" resultType="com.meicai.springboot.autocode.entity.TableEntity">
+   <select id="getAllTableSchema" resultType="com.zhaoyu.base.autocode.entity.TableEntity">
    		SELECT
 			DISTINCT TABLE_SCHEMA tableSchema
 		FROM
@@ -43,7 +43,7 @@
 		WHERE TABLE_SCHEMA not in ("information_schema","sys","mysql","performance_schema","ndna","hebau_dormitory")
    </select>
    
-   <select id="getTableNameByTableSchema" resultType="com.meicai.springboot.autocode.entity.TableEntity">
+   <select id="getTableNameByTableSchema" resultType="com.zhaoyu.base.autocode.entity.TableEntity">
    		SELECT
 			DISTINCT TABLE_NAME tableName
 		FROM

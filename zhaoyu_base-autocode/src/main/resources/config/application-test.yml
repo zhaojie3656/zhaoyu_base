@@ -23,7 +23,7 @@ spring:
     druid:
       filters: stat
       driver-class-name: com.mysql.jdbc.Driver
-      url: jdbc:mysql://localhost:3306/springboot?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+      url: jdbc:mysql://localhost:3306/information_schema?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
       username: root
       password: root
       #配置初始化大小/最小/最大

@@ -27,10 +27,6 @@
 		<artifactId>mc_springboot-redis</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
   	</dependency>
-  	<dependency>
-  		<groupId>com.meicai.springboot</groupId>
-		<artifactId>mc_springboot-dubbo</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
-  	</dependency>
+  	
   </dependencies>
 </project>
