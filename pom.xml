@@ -40,5 +40,6 @@
   </dependencies>
   <modules>
   	<module>zhaoyu_base-common</module>
+  	<module>zhaoyu_base-mysql</module>
   </modules>
 </project>
