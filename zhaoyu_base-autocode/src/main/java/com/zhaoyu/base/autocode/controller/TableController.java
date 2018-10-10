@@ -17,14 +17,18 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.view.freemarker.FreeMarkerConfig;
 
-import com.meicai.springboot.utils.ServiceResult;
 import com.zhaoyu.base.autocode.entity.TableEntity;
 import com.zhaoyu.base.autocode.param.TableParam;
 import com.zhaoyu.base.autocode.service.TableService;
+import com.zhaoyu.common.utils.ServiceResult;
 
 import freemarker.template.Configuration;
 import freemarker.template.Template;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiOperation;
 
+@Api(value="tableController" ,description="修饰整个类，描述Controller的作用")
 @RestController
 public class TableController {
 	
@@ -34,6 +38,8 @@ public class TableController {
 	@Autowired
 	private FreeMarkerConfig freeMarkerConfig;
 	
+	@ApiOperation(value="方法描述",notes="notes",httpMethod="POST")
+	@ApiImplicitParam(name = "tableSchema",value = "tableSchema",required = true,dataType = "String")
 	@RequestMapping("/table/getByTableSchema")
 	public ServiceResult getByTableSchema(String tableSchema){
 		List<TableEntity> list = tableService.getByTableSchema(tableSchema);

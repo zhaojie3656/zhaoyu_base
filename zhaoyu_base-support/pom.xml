@@ -8,23 +8,23 @@
   <artifactId>zhaoyu_base-support</artifactId>
   <dependencies>
   	<dependency>
-  		<groupId>com.meicai.springboot</groupId>
-		<artifactId>mc_springboot-common</artifactId>
+  		<groupId>com.zhaoyu.base</groupId>
+		<artifactId>zhaoyu_base-common</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
   	</dependency>
   	<dependency>
-  		<groupId>com.meicai.springboot</groupId>
-		<artifactId>mc_springboot-mysql</artifactId>
+  		<groupId>com.zhaoyu.base</groupId>
+		<artifactId>zhaoyu_base-mysql</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
   	</dependency>
   	<dependency>
-  		<groupId>com.meicai.springboot</groupId>
-		<artifactId>mc_springboot-freemarker</artifactId>
+  		<groupId>com.zhaoyu.base</groupId>
+		<artifactId>zhaoyu_base-freemarker</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
   	</dependency>
   	<dependency>
-  		<groupId>com.meicai.springboot</groupId>
-		<artifactId>mc_springboot-redis</artifactId>
+  		<groupId>com.zhaoyu.base</groupId>
+		<artifactId>zhaoyu_base-redis</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
   	</dependency>
   	

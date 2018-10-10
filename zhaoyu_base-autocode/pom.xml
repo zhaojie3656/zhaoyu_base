@@ -21,8 +21,8 @@
      </dependency>
 	   
   	<dependency>
-  		<groupId>com.meicai.springboot</groupId>
-		<artifactId>mc_springboot-support</artifactId>
+  		<groupId>com.zhaoyu.base</groupId>
+		<artifactId>zhaoyu_base-support</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
   	</dependency>
   </dependencies>
